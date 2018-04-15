@@ -60,8 +60,9 @@ int current_time = (21 * 60 * 60) + (0 * 60) + (0);
 // User defined vars! Tea time is when the tea should be made for.
 int tea_time = (6*60*60)+(0*60)+(0);
 int boil_duration = (10*60)+(0); // Never boil for time in the order of hours
-int steep_duration = (7*60)+(0); // Steeping in the order of hours would be good.
-                                 // Maybe I'll add an 'indefinite mode'
+int steep_duration = (7*60)+(0); // Setting steep duration to 0 should steep
+                                 // indefinitely. Same with boil duration, but
+                                 // don't do that, y'know? 
 
 // demo mode is for showing off the robot, it basically goes
 // through the tea making process very quickly.
